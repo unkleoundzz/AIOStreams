@@ -144,7 +144,7 @@ export class BaseWrapper {
 
     let response = useProxy
       ? fetch(url, {
-          dispatcher: new ProxyAgent(Settings.ADDON_PROXY),
+          
           method: 'GET',
           headers: headers,
           signal: AbortSignal.timeout(this.indexerTimeout),
